@@ -7,15 +7,20 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Letter from Oscar Wilde to Henrietta Stannard, Berneval-sur-Mer, 1897</title> <!-- Formal title of this TEI document -->
+                <title>Letter from Oscar Wilde to Henrietta Stannard, Berneval-sur-Mer, 1897</title>
                 <author>Oscar Wilde</author>
-                <respStmt> <!-- Information about responsibility for the TEI file -->
-                    <resp>TEI encoding</resp> <!-- Nature of responsability -->
+                
+                <respStmt>
+                    <resp>Transcription</resp>
+                    <name>Clara Martin</name>
+                </respStmt>
+                <respStmt>
+                    <resp>TEI encoding</resp>
                     <name>Clara Martin</name>
                 </respStmt>
             </titleStmt>
             
-            <publicationStmt> <!-- How the TEI file itself is published or made available -->
+            <publicationStmt>
                 <publisher>École nationale des chartes</publisher>
                 <pubPlace>Paris</pubPlace>
                 <date when="2025">2025</date>
@@ -31,74 +36,72 @@
             </publicationStmt>
             
             <sourceDesc>
-                <msDesc> <!-- Describes the physical manuscript as a whole, including origin, layout, and history. -->
-                    <msIdentifier> <!-- Provides the archival identity of the manuscript: repository, collection, shelfmark. -->
+                <msDesc>
+                    <msIdentifier>
                         <country>Ireland</country>
                         <settlement>Dublin</settlement>
                         <repository>Trinity College Dublin</repository>
                         <collection>Julia Rosenthal Oscar Wilde Collection</collection>
-                        <idno>IE TCD MS 11437/1/1/5</idno> <!-- Official shelfmark -->
+                        <idno>IE TCD MS 11437/1/1/5</idno>
                     </msIdentifier>
                     
-                    <msContents> <!-- Summarizes the intellectual contents of the manuscript (what text(s) it contains). -->
-                        <msItem> <!-- Describes a single textual item or work contained in the manuscript, with title, author, language, etc. -->
+                    <msContents>
+                        <msItem>
                             <title>Letter to Mrs Henrietta Stannard</title>
                             <author>Oscar Wilde</author>
                             <note>
-                                Autograph letter thanking <persName>Mrs Stannard</persName> for her sympathy,
-                                reflecting on his punishment and former life, and explaining his temporary
-                                use of the pseudonym <persName>Monsieur Sebastian Melmoth</persName>.
+                                Autograph letter to <persName ref="#pers_stannard">Henrietta Stannard</persName>, thanking her 
+                                for her sympathy, reflecting on his punishment and former life, and explaining his adoption 
+                                of the pseudonym <persName type="pseudonym" ref="#pers_wilde">Monsieur Sebastian Melmoth</persName> 
+                                while living quietly in exile at <placeName ref="#place_berneval">Berneval-sur-Mer</placeName>.
                             </note>
                             <textLang mainLang="en">English</textLang>
                         </msItem>
                     </msContents>
                     
                     <physDesc>
-                        <!-- Physical object description -->
                         <objectDesc form="letter">
                             <supportDesc>
                                 <support>
                                     <p>
-                                        Autograph letter written in ink on paper, headed “Hotel de la Place, Berneval-sur-Mer”.
+                                        Autograph letter written in ink on paper, headed 
+                                        “Hotel de la Place, Berneval-sur-Mer”.
                                     </p>
                                 </support>
                             </supportDesc>
                             <layoutDesc>
                                 <layout>
-                                    <p>Single column; line breaks preserved in this transcription.</p>
+                                    <p>Single column; original line breaks are preserved in this transcription.</p>
                                 </layout>
                             </layoutDesc>
                         </objectDesc>
                         
-                        <!-- Handwriting description -->
                         <handDesc>
                             <handNote scope="major">
                                 <p>Autograph hand of Oscar Wilde.</p>
                             </handNote>
                             <handNote scope="minor">
-                                <p>Modern pencil annotations in another hand (repository marks, marginal note).</p>
+                                <p>Modern pencil annotations and shelfmark added in another hand by the repository staff.</p>
                             </handNote>
                         </handDesc>
                         
-                        <!-- Additions to the manuscript (not part of Wilde's writing) -->
                         <additions>
-                            <p>Repository reference number “IE TCD MS 11437/1/1/5” written in pencil at the top of the page.</p>
+                            <p>
+                                Repository reference “IE TCD MS 11437/1/1/5” written in pencil at the top of the first page.
+                            </p>
                             <note type="marginal" resp="encoder" cert="low">
-                                Unreadable pencil annotation.
+                                Illegible pencil annotation in the margin, not in Wilde’s hand.
                             </note>
                         </additions>
                     </physDesc>
                     
-                    
                     <history>
                         <origin>
                             <p>
-                                Written at <placeName>Berneval-sur-Mer</placeName> between
-                                <date notBefore="1897-05" notAfter="1897-09">
-                                    May and September 1897
-                                </date>,
-                                after Wilde’s release from prison, and addressed to
-                                <persName>Henrietta Stannard</persName>.
+                                Written at <placeName ref="#place_berneval">Berneval-sur-Mer</placeName> between 
+                                <date notBefore="1897-05" notAfter="1897-09">May and September 1897</date>, 
+                                after Wilde’s release from <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, 
+                                and addressed to <persName ref="#pers_stannard">Henrietta Stannard</persName>.
                             </p>
                         </origin>
                     </history>
@@ -106,45 +109,161 @@
             </sourceDesc>
         </fileDesc>
         
-        <encodingDesc> <!-- Editorial and encoding decisions behind the TEI file. -->
-            <projectDesc> <!-- Purpose, scope, and institutional context of the TEI encoding project. -->
+        <encodingDesc>
+            <projectDesc>
                 <p>
                     This TEI file is part of a corpus of three letters by Oscar Wilde encoded
                     for the course “Modelling Humanities Data with TEI-XML” at the École
                     nationale des chartes.
                 </p>
             </projectDesc>
-            <editorialDecl> <!-- Editorial principles followed during transcription, such as normalization, punctuation policy, or treatment of line breaks. -->
+            <editorialDecl>
                 <p>
                     Diplomatic transcription following original spelling, punctuation, and
-                    lineation. No normalisation has been applied.
+                    lineation. No normalisation has been applied. Obvious editorial interventions 
+                    (such as supplied punctuation) are encoded using &lt;supplied&gt;, and foreign 
+                    expressions are marked with &lt;foreign xml:lang="fr"&gt;.
                 </p>
             </editorialDecl>
         </encodingDesc>
         
-        <profileDesc> <!-- Non-bibliographic metadata describing the text’s linguistic, situational, and correspondence contexts. -->
+        <profileDesc>
             <langUsage>
                 <language ident="en">English</language>
             </langUsage>
             
+            <particDesc>
+                <listPerson>
+                    
+                    <person xml:id="pers_wilde">
+                        <persName>
+                            <forename>Oscar</forename>
+                            <addName type="middleName">Fingal O’Flahertie Wills</addName>
+                            <surname>Wilde</surname>
+                            <addName type="alias">Sebastian Melmoth</addName>
+                        </persName>
+                        <idno type="wikidata">Q30875</idno>
+                        <idno type="viaf">34464414</idno>
+                        
+                        <state type="occupation">
+                            <p>Author, playwright, journalist, and poet associated with the Aesthetic and Decadent movements.</p>
+                        </state>
+                        
+                        <note>
+                            In 1897, following his release from <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, 
+                            Oscar Wilde lived in exile in northern France under the alias 
+                            <addName type="alias">Sebastian Melmoth</addName>. The period he spent at 
+                            <placeName ref="#place_berneval">Berneval-sur-Mer</placeName> was marked by fragile recovery, 
+                            precarious finances, and renewed attempts to write, as reflected in this letter’s mixture of 
+                            gratitude, self-criticism, and longing for solitude.
+                        </note>
+                    </person>
+                    
+                    <person xml:id="pers_stannard">
+                        <persName>
+                            <forename>Henrietta</forename>
+                            <surname>Stannard</surname>
+                            <addName type="pseudonym">John Strange Winter</addName>
+                        </persName>
+                        
+                        <idno type="wikidata">Q6259383</idno>
+                        
+                        <state type="occupation">
+                            <p>Popular novelist and short-story writer, particularly known for military and sentimental fiction.</p>
+                        </state>
+                        
+                        <note>
+                            Henrietta Eliza Vaughan Stannard (1856–1911), who wrote under the pen name 
+                            <addName type="pseudonym">John Strange Winter</addName>, was a prolific English author of 
+                            short stories and novels. She enjoyed considerable commercial success in the late nineteenth 
+                            century, publishing widely in periodicals and in volume form. In this letter Wilde responds 
+                            warmly to the sympathy conveyed by her husband and acknowledges the moral support she offers 
+                            during his exile in France.
+                        </note>
+                    </person>
+                    
+                    <person xml:id="pers_jane_wilde">
+                        <persName>
+                            <forename>Jane</forename>
+                            <addName type="middleName">Francesca</addName>
+                            <surname>Wilde</surname>
+                            <addName type="pseudonym">Speranza</addName>
+                        </persName>
+                        
+                        <idno type="wikidata">Q272303</idno>
+                        
+                        <state type="occupation">
+                            <p>Poet, nationalist writer, and salonnière active in mid-nineteenth-century Dublin and London.</p>
+                        </state>
+                        
+                        <state type="relationship">
+                            <p>Mother of Oscar Wilde; her literary reputation and moral authority are explicitly invoked in this letter.</p>
+                        </state>
+                        
+                        <note>
+                            Jane Francesca Wilde (1821–1896), known by the pen name 
+                            <addName type="pseudonym">Speranza</addName>, was an Irish poet and essayist associated with 
+                            Young Ireland nationalism. Wilde’s reference to her “nobility of soul and intellect” in this 
+                            letter highlights the tension he felt between his former life and the ideals embodied by his 
+                            mother, whose work and character <persName ref="#pers_stannard">Henrietta Stannard</persName> had admired.
+                        </note>
+                    </person>
+                    
+                </listPerson>
+            </particDesc>
+            
+            <settingDesc>
+                <listPlace>
+                    
+                    <place xml:id="place_berneval">
+                        <placeName type="official">Berneval-sur-Mer</placeName>
+                        <placeName type="variant">Berneval</placeName>
+                        <placeName type="current">Petit-Caux</placeName>
+                        
+                        <idno type="wikidata">Q21979907</idno>
+                        
+                        <note>
+                            Berneval-sur-Mer is a former coastal commune in the Seine-Maritime département (Normandy, France), 
+                            now part of the commune of <placeName>Petit-Caux</placeName>. After his release from prison in May 1897, 
+                            Wilde stayed there under the pseudonym <persName ref="#pers_wilde">Sebastian Melmoth</persName>, lodging in a small seaside inn. 
+                            The letter to <persName ref="#pers_stannard">Henrietta Stannard</persName> dates from this period of seclusion and convalescence.
+                        </note>
+                    </place>
+                    
+                    <place xml:id="place_reading_gaol">
+                        <placeName type="official">HM Prison Reading</placeName>
+                        <placeName type="common">Reading Gaol</placeName>
+                        
+                        <idno type="wikidata">Q3930959</idno>
+                        
+                        <note>
+                            Reading Gaol (HM Prison Reading) was the Victorian prison in Berkshire, England, where Wilde was incarcerated 
+                            from 1895 to 1897. The experiences he endured there deeply marked his later writings and provide the immediate 
+                            biographical background for the exile described in this letter.
+                        </note>
+                    </place>
+                    
+                </listPlace>
+            </settingDesc>
+            
             <correspDesc>
                 <correspAction type="sent">
-                    <persName>Oscar Wilde</persName>
-                    <placeName>Berneval-sur-Mer</placeName>
+                    <persName ref="#pers_wilde">Oscar Wilde</persName>
+                    <placeName ref="#place_berneval">Berneval-sur-Mer</placeName>
                     <date notBefore="1897-05" notAfter="1897-09">
                         between May and September 1897
                     </date>
                 </correspAction>
                 <correspAction type="received">
-                    <persName>Mrs Henrietta Stannard</persName>
+                    <persName ref="#pers_stannard">Henrietta Stannard</persName>
                 </correspAction>
             </correspDesc>
         </profileDesc>
          
-        <revisionDesc> <!-- Record of changes, revisions, and updates made to the TEI file over time. -->
+        <revisionDesc>
             <change when="2025-11-16">
                 <name>Clara Martin</name>
-                <desc>Initial TEI encoding of the Wilde–Stannard letter.</desc>
+                <desc>Diplomatic transcription and TEI encoding of the Wilde–Stannard letter.</desc>
             </change>
         </revisionDesc>
     </teiHeader>
@@ -153,17 +272,15 @@
         <body>
             <div type="letter" xml:id="stannard-letter">
                 
-                <!-- Printed/manuscript letterhead -->
                 <note type="letterhead" subtype="address">
                     <p>
                         Hotel de la Place<lb/>
-                        Berneval-sur-Mer.
+                        <placeName ref="#place_berneval">Berneval-sur-Mer</placeName>.
                     </p>
                 </note>
                 
-                <!-- Opening of the letter -->
                 <opener>
-                    <salute>Dear Mrs Stannard</salute>
+                    <salute>Dear <persName ref="#pers_stannard">Mrs Stannard</persName></salute>
                 </opener>
                                 
                 <p rend="indentation">
@@ -189,7 +306,7 @@
                     I was leading a life quite<lb/>
                     unworthy of an artist in<lb/>
                     every way, and unworthy of a<lb/>
-                    son of my dear mother whose<lb/>
+                    son of <persName ref="#pers_jane_wilde">my dear mother</persName> whose<lb/>
                     nobility of soul and intellect<lb/>
                     you always appreciated, and<lb/>
                     who was herself always one of<lb/>
@@ -210,7 +327,10 @@
                     I have for the moment taken the<lb/>
                     name of<lb/>
                     <seg type="indentation">
-                        <persName type="pseudonym">Monsieur Sebastian Melmoth</persName> <pc>—</pc><lb/>
+                        <persName ref="#pers_wilde">
+                            <addName type="honorific">Monsieur</addName>
+                            <addName type="pseudonym">Sebastian Melmoth</addName>
+                        </persName> <pc>—</pc><lb/>
                         a curious name which I’ll<lb/>
                         explain to you tomorrow.
                     </seg>
@@ -218,7 +338,7 @@
                 
                 <p rend="indentation">
                     Pray let my name and place of<lb/>
-                    <foreign xml:lang="fr">sejour</foreign> be quite a secret to<lb/>
+                    <foreign xml:lang="fr">séjour</foreign> be quite a secret to<lb/>
                     all. I hope to live in solitude<lb/>
                     and peace. Accept these few<lb/>
                     verses as a slight token of my<lb/>
@@ -227,7 +347,7 @@
                 
                 <closer>
                     <salute>Believe me yours</salute>
-                    <signed>Oscar Wilde</signed>
+                    <signed><persName ref="#pers_wilde">Oscar Wilde</persName></signed>
                 </closer>
                 
             </div>
