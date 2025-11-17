@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+ schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="nelson">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter from Oscar Wilde to Major J.O. Nelson, Berneval-sur-Mer, May 1897</title> <!-- Formal title of this TEI document -->
+                <author>Oscar Wilde</author>
+                <respStmt> <!-- Information about responsibility for the TEI file -->
+                    <resp>TEI encoding</resp> <!-- Nature of responsibility -->
+                    <name>Clara Martin</name>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt> <!-- How the TEI file itself is published or made available -->
+                <publisher>École nationale des chartes</publisher>
+                <pubPlace>Paris</pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <p>
+                        TEI encoding © 2025 by Clara Martin. 
+                        Manuscript: The New York Public Library, Henry W. and Albert A. Berg Collection of English and American Literature, 
+                        Berg Coll MSS Wilde [Text]. 
+                        The copyright status of the manuscript is uncertain; this encoding is provided for teaching and research use 
+                        in accordance with NYPL guidance on reuse.
+                    </p>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <msDesc> <!-- Describes the physical manuscript as a whole, including origin, layout, and history. -->
+                    <msIdentifier> <!-- Provides the archival identity of the manuscript: repository, collection, shelfmark. -->
+                        <country>USA</country>
+                        <settlement>New York</settlement>
+                        <repository>The New York Public Library</repository>
+                        <collection>Oscar Wilde collection of papers</collection>
+                        <idno>Berg Coll MSS Wilde</idno> <!-- Shelf locator from the NYPL catalogue -->
+                    </msIdentifier>
+                    
+                    <msContents> <!-- Summarizes the intellectual contents of the manuscript (what text(s) it contains). -->
+                        <msItem> <!-- Describes a single textual item or work contained in the manuscript. -->
+                            <title>Letter to Major J.O. Nelson</title>
+                            <author>Oscar Wilde</author>
+                            <note>
+                                Autograph letter to <persName ref="#pers_nelson">Major J.O. Nelson</persName>, governor of 
+                                <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, expressing gratitude for his kindness in prison and
+                                reflecting on suffering, prison life, and the possibility of reforming the system.
+                            </note>
+                            <textLang mainLang="en">English</textLang>
+                        </msItem>
+                    </msContents>
+                    
+                    <physDesc> <!-- Physical description of the manuscript: support, layout, and hands. -->
+                        <objectDesc form="letter">
+                            <supportDesc>
+                                <support>
+                                    <p>
+                                        Autograph letter written in ink on paper, comprising four leaves, headed 
+                                        “Hotel de la Plage, Berneval-sur-Mer, Près de Dieppe”.
+                                    </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>Single column of prose; line breaks preserved in this transcription.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!-- Handwriting description -->
+                        <handDesc>
+                            <handNote scope="major">
+                                <p>Autograph hand of Oscar Wilde.</p>
+                            </handNote>
+                            <handNote scope="minor">
+                                <p>Modern archival annotations and identifiers in another hand (repository marks, order numbers).</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    
+                    <history>
+                        <origin>
+                            <p>
+                                Written at <placeName ref="#place_berneval">Berneval-sur-Mer</placeName> on 
+                                <date when="1897-05-28">28 May 1897</date>, after Wilde’s release from 
+                                <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, and addressed to 
+                                <persName ref="#pers_nelson">Major J.O. Nelson</persName>, governor of the prison.
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+                
+                <listBibl>
+                    <bibl xml:id="bibl_warder_martin">
+                        <title type="work" rend="italic">
+                            The Case of Warder Martin: Some Cruelties of Prison Life
+                        </title>
+                        <author ref="#pers_wilde">Oscar Wilde</author>
+                        <date when="1896">1896</date>
+                        <pubPlace>London</pubPlace>
+                        <note>
+                            <title type="work" rend="italic">The Case of Warder Martin: Some Cruelties of Prison Life</title> 
+                            is a pamphlet first published anonymously in London in 1896 and later reissued 
+                            under the expanded title 
+                            <title type="work" rend="italic">Children in Prison and Other Cruelties of Prison Life</title>. 
+                            Although the 1896 printing was anonymous, the themes and arguments closely anticipate 
+                            those expressed by <persName ref="#pers_wilde">Oscar Wilde</persName> in his public letter 
+                            to the editor of <title type="periodical" rend="italic">The Daily Chronicle</title> 
+                            (France, 27 May 1897), where he discussed “the Martin case” as evidence of a system 
+                            in need of urgent reform. This pamphlet denounces the mistreatment of child prisoners at 
+                            <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, particularly the conduct of 
+                            Warder Henry Isaac Martin, and offers essential contextual material for understanding 
+                            Wilde’s reflections on prison life.
+                        </note>
+                    </bibl>
+                </listBibl>
+                
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc> <!-- Editorial and encoding decisions behind the TEI file. -->
+            <projectDesc> <!-- Purpose, scope, and institutional context of the TEI encoding project. -->
+                <p>
+                    This TEI file is part of a corpus of three letters by Oscar Wilde encoded
+                    for the course “Modelling Humanities Data with TEI-XML” at the École
+                    nationale des chartes.
+                </p>
+            </projectDesc>
+            <editorialDecl> <!-- Editorial principles followed during transcription. -->
+                <p>
+                    Diplomatic transcription following original spelling, punctuation, and
+                    lineation. No normalisation has been applied; obvious abbreviations
+                    (such as “Mons.”) are encoded with &lt;choice&gt;, &lt;abbr&gt;, and &lt;expan&gt;.
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <particDesc>
+                <listPerson>
+                    
+                    <person xml:id="pers_wilde">
+                        <persName>
+                            <forename>Oscar</forename>
+                            <addName type="middleName">Fingal O’Flahertie Wills</addName>
+                            <surname>Wilde</surname>
+                            <addName type="alias">Sebastian Melmoth</addName>
+                        </persName>
+                        
+                        <idno type="wikidata">Q30875</idno>
+                        <idno type="viaf">34464414</idno>
+                        
+                        <state type="occupation">
+                            <p>Author, playwright, journalist, and poet associated with the Aesthetic and Decadent movements.</p>
+                        </state>
+                        
+                        <note>
+                            Oscar Fingal O’Flahertie Wills Wilde (1854–1900) was an Irish playwright, novelist, essayist, 
+                            and one of the central figures of the Aesthetic movement in late Victorian Britain.  
+                            Celebrated in the 1890s for his sharp wit, public persona, and comedies of manners 
+                            such as <title type="work" rend="italic">The Importance of Being Earnest</title>, 
+                            he fell spectacularly after his conviction for “gross indecency” in 1895.  
+                            Sentenced to two years’ hard labour, Wilde was imprisoned in several institutions, 
+                            including <placeName ref="#place_reading_gaol">Reading Gaol</placeName>, where he endured 
+                            harsh conditions that profoundly marked his later writings.
+                            
+                            After his release in 1897, he adopted the alias 
+                            <addName type="alias">Sebastian Melmoth</addName> during his exile in France, 
+                            where he lived in poverty but remained intellectually active.  
+                            His prison experience produced 
+                            <title type="work" rend="italic">De Profundis</title>, a long epistolary meditation, 
+                            and later inspired <title type="work" rend="italic">The Ballad of Reading Gaol</title> (1898).  
+                            Wilde’s posthumous reputation has grown considerably, and he is now regarded as one of the 
+                            most distinctive voices of nineteenth-century literature, noted for his stylistic brilliance, 
+                            social satire, and exploration of individuality, morality, and desire.
+                        </note>
+                    </person>
+                                        
+                    <person xml:id="pers_nelson">
+                        <persName>
+                            <forename>James</forename>
+                            <addName type="middleName">O.</addName>
+                            <surname>Nelson</surname>
+                            <addName type="title">Major</addName>
+                        </persName>
+                        
+                        <state type="occupation">
+                            <p>Prison governor in the British penal system, serving as Governor of Reading Gaol from 1896.</p>
+                        </state>
+                                                
+                        <state type="relationship">
+                            <p>Known for his humane treatment of Oscar Wilde during Wilde’s imprisonment in Reading Gaol.</p>
+                        </state>
+                        
+                        <note>
+                            Major James O. Nelson served as Governor of Reading Gaol from 1896. He is 
+                            remembered for his exceptional humanity toward Oscar Wilde during the latter’s 
+                            incarceration (1895–1897). 
+                            Nelson discreetly granted Wilde small but meaningful allowances: access to 
+                            books; permission to resume reading and writing; and, most importantly, the 
+                            opportunity to revise earlier portions of his manuscript. 
+                            This gesture made possible the composition of 
+                            <title type="work" rend="italic">De Profundis</title>, Wilde’s long 
+                            epistolary meditation written in Reading Gaol.
+                            After Wilde’s release, Nelson received presentation copies of 
+                            <title type="work" rend="italic">The Ballad of Reading Gaol</title> 
+                            (1898) and 
+                            <title type="work" rend="italic">The Importance of Being Earnest</title> 
+                            (1899), attesting to Wilde’s personal gratitude. 
+                            Nelson’s legacy survives primarily through Wilde’s testimony, and he is 
+                            recognised by modern Wildean scholarship as a rare figure of empathy within 
+                            the Victorian penal system.
+                        </note>
+                    </person>
+                    
+                    <person xml:id="pers_ross">
+                        <persName>
+                            <forename>Robert</forename>
+                            <addName type="middleName">Baldwin</addName>
+                            <surname>Ross</surname>
+                            <addName type="alias">Robbie Ross</addName>
+                        </persName>
+                        
+                        <idno type="wikidata">Q1391982</idno>
+                        
+                        <state type="occupation">
+                            <p>Journalist, art critic, gallery director, and literary executor of Oscar Wilde.</p>
+                        </state>
+                                                                        
+                        <state type="relationship">
+                            <p>Close friend, long-term confidant, and later literary executor of Oscar Wilde.</p>
+                        </state>
+                        
+                        <note>
+                            Robert Baldwin “Robbie” Ross (1869–1918) was a Canadian-born British journalist, critic, and one of the most significant figures in the preservation of Oscar Wilde’s literary legacy. 
+                            A loyal friend from the 1880s until Wilde’s death, Ross defended him publicly during moments of intense scandal, provided emotional and financial support after Wilde’s release 
+                            from prison, and encouraged him to continue writing during his exile. 
+                            After Wilde’s death in 1900, Ross assumed the role of literary executor and played a decisive role in editing, republishing, and safeguarding Wilde’s manuscripts and 
+                            correspondence. His efforts not only contributed to Wilde’s posthumous reputation but also ensured that many of Wilde’s works survived intact. 
+                            Ross was a central figure in London’s artistic and literary circles, notably through his involvement with The Carfax Gallery, which he co-founded. 
+                            Remembered for his integrity, devotion, and influence on the dissemination of Wilde’s œuvre, Ross remains an essential figure in Wildean scholarship.
+                        </note>
+                    </person>
+                    
+                </listPerson>
+            </particDesc>
+                                  
+            <settingDesc>
+                <listPlace>
+                    
+                    <place xml:id="place_berneval">
+                        <placeName type="official">Berneval-sur-Mer</placeName>
+                        <placeName type="variant">Berneval</placeName>
+                        <placeName type="current">Petit-Caux</placeName>
+                        
+                        <idno type="wikidata">Q21979907</idno>
+                                                
+                        <note>
+                            Berneval-sur-Mer is a former coastal commune in the Seine-Maritime 
+                            département (Normandy, France), today part of the commune of 
+                            <placeName>Petit-Caux</placeName>. It was a quiet seaside village 
+                            frequented by artists and writers in the nineteenth century.
+                            
+                            After his release from <placeName ref="#place_reading_gaol">Reading Gaol</placeName> 
+                            in May 1897, Oscar Wilde stayed in Berneval-sur-Mer under the pseudonym 
+                            <persName ref="#pers_wilde">Sebastian Melmoth</persName>. He lodged at the 
+                            “Hôtel de la Plage,” where he attempted to resume writing and rebuild his 
+                            life in relative anonymity. 
+                            
+                            Wilde remained in Berneval from late May until September 1897, 
+                            when he left France temporarily and travelled to Naples, where he lived 
+                            for several weeks with Lord Alfred Douglas before returning again to France. 
+                            
+                            The letter edited in this TEI file was written from Berneval during this 
+                            period of fragile recovery.
+                        </note>
+                    </place>
+                    
+                    <place xml:id="place_reading_gaol">
+                        <placeName type="official">HM Prison Reading</placeName>
+                        <placeName type="common">Reading Gaol</placeName>
+                        
+                        <idno type="wikidata">Q3930959</idno>
+                                                
+                        <note>
+                            Reading Gaol (HM Prison Reading) is a Victorian prison located in Reading, 
+                            Berkshire, United Kingdom (Forbury Road). The prison was built in 1844 on the 
+                            model of the “separate system”, intended to enforce isolation and penitential 
+                            reflection. It is most famously associated with Oscar Wilde, who was 
+                            incarcerated there from 1895 to 1897 under the Criminal Law Amendment Act. 
+                            Wilde described the harsh conditions of the establishment in several writings, 
+                            and his experience there gave rise to 
+                            <title type="work" rend="italic">The Ballad of Reading Gaol</title> (1898), 
+                            one of his major late works.
+                        </note>
+                    </place>
+                    
+                </listPlace>
+            </settingDesc>
+            
+                       
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#pers_wilde">Oscar Wilde</persName>
+                    <placeName ref="#place_berneval">Berneval-sur-Mer</placeName>
+                    <date when="1897-05-28">28 May 1897</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#pers_nelson">Major J.O. Nelson</persName>
+                    <note>Governor of Reading Gaol.</note>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+        
+        <revisionDesc> <!-- Record of changes, revisions, and updates made to the TEI file over time. -->
+            <change when="2025-11-16">
+                <name>Clara Martin</name>
+                <desc>Initial TEI encoding of the Wilde–Nelson letter.</desc>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text xml:lang="en">
+        <body>
+            <div type="letter" xml:id="nelson-letter">
+                
+                <!-- Name used after release + address block at the head of the letter -->
+                <note type="letterhead">
+                    <p>
+                        My name is here,<lb/>
+                        <persName type="pseudonym">
+                            <hi rend="underline">
+                                <choice>
+                                    <abbr>Mons.</abbr>
+                                    <expan>Monsieur</expan>
+                                </choice>
+                                Sebastian Melmoth
+                            </hi>
+                        </persName><lb/><lb/>
+                        Hotel de la Plage<lb/>
+                        <placeName ref="#place_berneval">Berneval-sur-Mer</placeName>.<lb/>
+                        Près de <placeName>Dieppe</placeName>
+                    </p>
+                </note>
+                
+                <!-- Opening of the letter -->
+                <opener>
+                    <salute>Dear <persName ref="#pers_nelson">Major Nelson</persName>,</salute>
+                </opener>
+                
+                <!-- Paragraph 1 -->
+                <p rend="indentation">
+                    I had of course<lb/>
+                    intended to write to you as<lb/>
+                    soon as I had safely reached<lb/>
+                    French soil, to express, however<lb/>
+                    inadequately, my real feelings<lb/>
+                    of what you must let me<lb/>
+                    term, not merely sincere, but<lb/>
+                    <hi rend="underline">affectionate</hi> gratitude to you<lb/>
+                    for your kindness and gentleness<lb/>
+                    to me in <placeName ref="#place_reading_gaol">prison</placeName>, and for the real<lb/>
+                    care that you took of me<lb/>
+                    at the end, when I was mentally<lb/>
+                    upset and in a state of very<lb/>
+                    terrible nervous excitement. You<lb/>
+                    must not mind my using the<lb/>
+                    word ‘gratitude.’ I used to<lb/>
+                    think gratitude a burden to<lb/>
+                    carry. Now I know that it is<lb/>
+                    something that makes the heart<lb/>
+                    lighter. The ungrateful man<lb/>
+                    is one who walks slowly with<lb/>
+                    feet and heart of lead. But<lb/>
+                    when one knows the strange<lb/>
+                    joy of gratitude to God and<lb/>
+                    man the earth becomes lovelier<lb/>
+                    to one, and it is a pleasure<lb/>
+                    to count up, not one’s wealth<lb/>
+                    but one’s debts, not the little<lb/>
+                    that one possesses, but the<lb/>
+                    much that one owes.
+                </p>
+                
+                <!-- Paragraph 2 -->
+                <p rend="indentation">
+                    I abstained from writing,<lb/>
+                    however, because I was haunted by<lb/>
+                    the memory of the little<lb/>
+                    children, &amp; the wretched<lb/>
+                    half witted lad who was flogged<lb/>
+                    by the Doctor’s orders. I could<lb/>
+                    not have kept them out of<lb/>
+                    my letter, and to have mentioned<lb/>
+                    them to you might have put <hi rend="underline">you</hi><lb/>
+                    in a difficult position. In your<lb/>
+                    reply you <hi rend="underline">might</hi> have expressed<lb/>
+                    sympathy with my views <pc>—</pc> I<lb/>
+                    think you would have <pc>—</pc> and then<lb/>
+                    on the appearance of my public<lb/>
+                    letter you might have felt as<lb/>
+                    I had, in some almost<lb/>
+                    ungenerous or thoughtless<lb/>
+                    way, procured your private<lb/>
+                    opinion on official things, for<lb/>
+                    use as corroboration.
+                </p>
+                
+                <!-- Paragraph 3 -->
+                <p rend="indentation">
+                    I longed to speak to you<lb/>
+                    about these things on the<lb/>
+                    evening of my departure, but I<lb/>
+                    felt that in my position as a<lb/>
+                    prisoner it would have been<lb/>
+                    wrong of me to do so, and that<lb/>
+                    it would, or might have put<lb/>
+                    you in a difficult position<lb/>
+                    afterwards, as well as at the<lb/>
+                    time. I only hear of my<lb/>
+                    letter being published by a<lb/>
+                    telegram from <persName ref="#pers_ross">Mr. Ross</persName>, but<lb/>
+                    I hope they have printed it in<lb/>
+                    full, as I tried to express<lb/>
+                    in it my appreciation and<lb/>
+                    admiration of your own humane<lb/>
+                    spirit and affectionate interest<lb/>
+                    in <hi rend="underline">all</hi> the prisoners under<lb/>
+                    your charge. I did not wish<lb/>
+                    people to think that any<lb/>
+                    exception had been specially<lb/>
+                    made for me. Such exceptional<lb/>
+                    treatment as I received was by<lb/>
+                    order of the Commissioners. You<lb/>
+                    gave me the same kindness as<lb/>
+                    you gave to everyone. Of course<lb/>
+                    I made more demands, but<lb/>
+                    then I think I had really more<lb/>
+                    needs than others <pc>—</pc> and I lacked<lb/>
+                    often their cheerful acquiescence <pc>—</pc>
+                </p>
+                
+                <!-- Paragraph 4 -->
+                <p rend="indentation">
+                    Of course I side with<lb/>
+                    the prisoners <pc>—</pc> I was one, and<lb/>
+                    I belong to their class now <pc>—</pc><lb/>
+                    I am not a scrap ashamed of<lb/>
+                    having been in <placeName ref="#place_reading_gaol">prison</placeName>. I am<lb/>
+                    horribly ashamed of the materialism<lb/>
+                    of the life that brought me<lb/>
+                    there. It was quite unworthy of an<lb/>
+                    artist.
+                </p>
+                
+                <!-- Paragraph 5 -->
+                <p rend="indentation">
+                    Of <ref target="#bibl_warder_martin">Martin</ref>, and the subjects<lb/>
+                    of my letter I of course say<lb/>
+                    nothing at all, except that<lb/>
+                    the man who could change the<lb/>
+                    system <pc>—</pc> if any one man can<lb/>
+                    do so <pc>—</pc> is yourself. At present<lb/>
+                    I write to ask you to allow<lb/>
+                    me to sign myself, once at any<lb/>
+                    rate in life,
+                </p>
+                
+                <closer>
+                    <salute>your sincere and grateful friend,</salute>
+                    <signed><persName ref="#pers_wilde">Oscar Wilde</persName>.</signed>
+                </closer>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

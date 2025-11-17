@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+ schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="stannard">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter from Oscar Wilde to Henrietta Stannard, Berneval-sur-Mer, 1897</title> <!-- Formal title of this TEI document -->
+                <author>Oscar Wilde</author>
+                <respStmt> <!-- Information about responsibility for the TEI file -->
+                    <resp>TEI encoding</resp> <!-- Nature of responsability -->
+                    <name>Clara Martin</name>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt> <!-- How the TEI file itself is published or made available -->
+                <publisher>École nationale des chartes</publisher>
+                <pubPlace>Paris</pubPlace>
+                <date when="2025">2025</date>
+                <availability>
+                    <p>
+                        TEI encoding © 2025 by Clara Martin. 
+                        Manuscript: Trinity College Dublin, IE TCD MS 11437/1/1/5. 
+                        Public domain manuscript; digital images © The Board of Trinity College Dublin. 
+                        Images available for single-use academic application only.
+                        Publication or redistribution requires formal written permission from the Library of Trinity College Dublin.
+                    </p>
+                </availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <msDesc> <!-- Describes the physical manuscript as a whole, including origin, layout, and history. -->
+                    <msIdentifier> <!-- Provides the archival identity of the manuscript: repository, collection, shelfmark. -->
+                        <country>Ireland</country>
+                        <settlement>Dublin</settlement>
+                        <repository>Trinity College Dublin</repository>
+                        <collection>Julia Rosenthal Oscar Wilde Collection</collection>
+                        <idno>IE TCD MS 11437/1/1/5</idno> <!-- Official shelfmark -->
+                    </msIdentifier>
+                    
+                    <msContents> <!-- Summarizes the intellectual contents of the manuscript (what text(s) it contains). -->
+                        <msItem> <!-- Describes a single textual item or work contained in the manuscript, with title, author, language, etc. -->
+                            <title>Letter to Mrs Henrietta Stannard</title>
+                            <author>Oscar Wilde</author>
+                            <note>
+                                Autograph letter thanking <persName>Mrs Stannard</persName> for her sympathy,
+                                reflecting on his punishment and former life, and explaining his temporary
+                                use of the pseudonym <persName>Monsieur Sebastian Melmoth</persName>.
+                            </note>
+                            <textLang mainLang="en">English</textLang>
+                        </msItem>
+                    </msContents>
+                    
+                    <physDesc>
+                        <!-- Physical object description -->
+                        <objectDesc form="letter">
+                            <supportDesc>
+                                <support>
+                                    <p>
+                                        Autograph letter written in ink on paper, headed “Hotel de la Place, Berneval-sur-Mer”.
+                                    </p>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p>Single column; line breaks preserved in this transcription.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        
+                        <!-- Handwriting description -->
+                        <handDesc>
+                            <handNote scope="major">
+                                <p>Autograph hand of Oscar Wilde.</p>
+                            </handNote>
+                            <handNote scope="minor">
+                                <p>Modern pencil annotations in another hand (repository marks, marginal note).</p>
+                            </handNote>
+                        </handDesc>
+                        
+                        <!-- Additions to the manuscript (not part of Wilde's writing) -->
+                        <additions>
+                            <p>Repository reference number “IE TCD MS 11437/1/1/5” written in pencil at the top of the page.</p>
+                            <note type="marginal" resp="encoder" cert="low">
+                                Unreadable pencil annotation.
+                            </note>
+                        </additions>
+                    </physDesc>
+                    
+                    
+                    <history>
+                        <origin>
+                            <p>
+                                Written at <placeName>Berneval-sur-Mer</placeName> between
+                                <date notBefore="1897-05" notAfter="1897-09">
+                                    May and September 1897
+                                </date>,
+                                after Wilde’s release from prison, and addressed to
+                                <persName>Henrietta Stannard</persName>.
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc> <!-- Editorial and encoding decisions behind the TEI file. -->
+            <projectDesc> <!-- Purpose, scope, and institutional context of the TEI encoding project. -->
+                <p>
+                    This TEI file is part of a corpus of three letters by Oscar Wilde encoded
+                    for the course “Modelling Humanities Data with TEI-XML” at the École
+                    nationale des chartes.
+                </p>
+            </projectDesc>
+            <editorialDecl> <!-- Editorial principles followed during transcription, such as normalization, punctuation policy, or treatment of line breaks. -->
+                <p>
+                    Diplomatic transcription following original spelling, punctuation, and
+                    lineation. No normalisation has been applied.
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        
+        <profileDesc> <!-- Non-bibliographic metadata describing the text’s linguistic, situational, and correspondence contexts. -->
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>Oscar Wilde</persName>
+                    <placeName>Berneval-sur-Mer</placeName>
+                    <date notBefore="1897-05" notAfter="1897-09">
+                        between May and September 1897
+                    </date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>Mrs Henrietta Stannard</persName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+         
+        <revisionDesc> <!-- Record of changes, revisions, and updates made to the TEI file over time. -->
+            <change when="2025-11-16">
+                <name>Clara Martin</name>
+                <desc>Initial TEI encoding of the Wilde–Stannard letter.</desc>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text xml:lang="en">
+        <body>
+            <div type="letter" xml:id="stannard-letter">
+                
+                <!-- Printed/manuscript letterhead -->
+                <note type="letterhead" subtype="address">
+                    <p>
+                        Hotel de la Place<lb/>
+                        Berneval-sur-Mer.
+                    </p>
+                </note>
+                
+                <!-- Opening of the letter -->
+                <opener>
+                    <salute>Dear Mrs Stannard</salute>
+                </opener>
+                                
+                <p rend="indentation">
+                    Your kind husband<lb/>
+                    gave me a very sympathetic<lb/>
+                    and touching message<lb/>
+                    from you yesterday, for<lb/>
+                    which pray accept my<lb/>
+                    most sincere thanks: he<lb/>
+                    also asked me from you<lb/>
+                    to call, a privilege of<lb/>
+                    which I hope to avail<lb/>
+                    myself tomorrow afternoon.
+                </p>
+                
+                <p rend="indentation">
+                    Of course I have<lb/>
+                    passed through a very<lb/>
+                    terrible punishment <pc>—</pc> and<lb/>
+                    have suffered the very<lb/>
+                    pitch of anguish and despair<supplied reason="punct">.</supplied><lb/>
+                    Still I am conscious that<lb/>
+                    I was leading a life quite<lb/>
+                    unworthy of an artist in<lb/>
+                    every way, and unworthy of a<lb/>
+                    son of my dear mother whose<lb/>
+                    nobility of soul and intellect<lb/>
+                    you always appreciated, and<lb/>
+                    who was herself always one of<lb/>
+                    your warmest and most<lb/>
+                    enthusiastic admirers.
+                </p>
+                
+                <p rend="indentation">
+                    I am living quietly in<lb/>
+                    a little <hi rend="underline"><foreign xml:lang="fr">auberge</foreign></hi> by the sea, and<lb/>
+                    for the moment am quite alone.<lb/>
+                    <placeName>France</placeName> has been charming to<lb/>
+                    me and about me during all<lb/>
+                    my imprisonment, and has now<lb/>
+                    <pc>—</pc> mother of all artists as she is <pc>—</pc><lb/>
+                    given me <hi rend="underline"><foreign xml:lang="fr">asile</foreign></hi>. To escape the<lb/>
+                    foolish tongue and prying eye<lb/>
+                    I have for the moment taken the<lb/>
+                    name of<lb/>
+                    <seg type="indentation">
+                        <persName type="pseudonym">Monsieur Sebastian Melmoth</persName> <pc>—</pc><lb/>
+                        a curious name which I’ll<lb/>
+                        explain to you tomorrow.
+                    </seg>
+                </p>
+                
+                <p rend="indentation">
+                    Pray let my name and place of<lb/>
+                    <foreign xml:lang="fr">sejour</foreign> be quite a secret to<lb/>
+                    all. I hope to live in solitude<lb/>
+                    and peace. Accept these few<lb/>
+                    verses as a slight token of my<lb/>
+                    gratitude.
+                </p>
+                
+                <closer>
+                    <salute>Believe me yours</salute>
+                    <signed>Oscar Wilde</signed>
+                </closer>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

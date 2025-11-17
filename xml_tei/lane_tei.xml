@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+ schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="lane">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Letter from Oscar Wilde to John Lane, Worthing, August 1894</title>
+        <author>Oscar Wilde</author>
+        <respStmt>
+          <resp>TEI encoding</resp>
+          <name>Clara Martin</name>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>École nationale des chartes</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date when="2025">2025</date>
+        <availability>
+          <p>
+            TEI encoding © 2025 by Clara Martin.
+            Manuscript: The Morgan Library &amp; Museum, New York, MA 7258.14.
+            Public domain manuscript. Photographic images © The Morgan Library &amp; Museum.
+            Reuse permitted for teaching and research only.
+          </p>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <country>USA</country>
+            <settlement>New York</settlement>
+            <repository>The Morgan Library &amp; Museum</repository>
+            <collection>Oscar Wilde Papers</collection>
+            <idno>MA 7258.14</idno>
+          </msIdentifier>
+          
+          <msContents>
+            <msItem>
+              <title>Letter to John Lane</title>
+              <author>Oscar Wilde</author>
+              <note>
+                Autograph letter to <persName ref="#pers_lane">John Lane</persName>, written from 
+                <placeName ref="#place_worthing">Worthing</placeName>, discussing corrected proofs, 
+                publication details, pricing, United States copyright, and the production of several works, 
+                including <title type="work" rend="italic">The Woman of No Importance</title> and 
+                <title type="work" rend="italic">The Portrait of Mr. W.H.</title>.
+              </note>
+              <textLang mainLang="en">English</textLang>
+            </msItem>
+          </msContents>
+          
+          <physDesc>
+            <objectDesc form="letter">
+              <supportDesc>
+                <support>
+                  <p>
+                    Autograph letter written in ink on paper, headed with printed
+                    “16, Tite Street, Chelsea S.W.” and handwritten “5 Esplanade, Worthing”.
+                  </p>
+                </support>
+              </supportDesc>
+              <layoutDesc>
+                <layout>
+                  <p>Single column; line breaks preserved in this transcription.</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            
+            <handDesc>
+              <handNote scope="major">
+                <p>Autograph hand of Oscar Wilde.</p>
+              </handNote>
+              <handNote scope="minor">
+                <p>Modern pencil annotation in another hand on page 6.</p>
+              </handNote>
+            </handDesc>
+            
+            <additions>
+              <note type="marginal" resp="encoder" cert="low">
+                Pencil annotation “RO-O-O” at top of page 6 (not Wilde’s hand).
+              </note>
+            </additions>
+          </physDesc>
+          
+          <history>
+            <origin>
+              <p>
+                Written at <placeName ref="#place_worthing">Worthing</placeName> in 
+                <date when="1894-08">August 1894</date>, and addressed to 
+                <persName ref="#pers_lane">John Lane</persName>, Wilde’s publisher at 
+                <orgName ref="#org_bodley_head">The Bodley Head</orgName>.
+              </p>
+            </origin>
+          </history>
+          
+        </msDesc>
+        
+        <listBibl>
+          
+          <bibl xml:id="work_lady_windermere">
+            <title type="work" rend="italic">Lady Windermere’s Fan</title>
+            <author ref="#pers_wilde">Oscar Wilde</author>
+            <date when="1892">1892</date>
+            <note>
+              Wilde’s first major society comedy, set in fashionable London drawing rooms and 
+              exploring jealousy, scandal, and maternal sacrifice. In the letter, Wilde cites 
+              this play as a typographical model for how the U.S. copyright notice should be 
+              printed in the edition of <title ref="#work_woman_no_importance" rend="italic">The Woman of No Importance</title>.
+            </note>
+          </bibl>
+          
+          <bibl xml:id="work_woman_no_importance">
+            <title type="work" rend="italic">The Woman of No Importance</title>
+            <author ref="#pers_wilde">Oscar Wilde</author>
+            <date when="1893">1893</date>
+            <note>
+              A society comedy exposing double standards in Victorian morality through the fate 
+              of Mrs. Arbuthnot, a “fallen woman” confronting the aristocrat who ruined her. 
+              Wilde discusses here its simultaneous copyright in America and the timing of the 
+              book’s publication to coincide with the provincial tour of the play.
+            </note>
+          </bibl>
+          
+          <bibl xml:id="work_mr_wh">
+            <title type="work" rend="italic">The Portrait of Mr. W.H.</title>
+            <author ref="#pers_wilde">Oscar Wilde</author>
+            <date when="1889">1889</date>
+            <note>
+              A hybrid tale combining literary criticism and fictional forgery, built on the idea 
+              that Shakespeare’s Sonnets were inspired by a boy-actor named Willie Hughes. 
+              In the letter, Wilde suggests that Elkin Mathews might publish a new edition of the 
+              work, with altered print run and price.
+            </note>
+          </bibl>
+          
+          <bibl xml:id="work_oscariana">
+            <title type="work" rend="italic">Oscariana</title>
+            <author ref="#pers_wilde">Oscar Wilde</author>
+            <date when="1895">1895</date>
+            <note>
+              <title type="work" rend="italic">Oscariana</title> is a privately printed collection 
+              of Oscar Wilde’s epigrams and witty aphorisms, compiled by his wife 
+              <persName ref="#pers_constance_wilde">Constance Wilde</persName> during their stay in 
+              <placeName ref="#place_worthing">Worthing</placeName> in the summer of 1894. 
+              The anthology was entrusted to the publisher and bookseller 
+              <persName ref="#pers_arthur_humphreys">Arthur L. Humphreys</persName>, 
+              who issued it in a small private edition in 1895. 
+              The collection highlights Wilde’s characteristic paradoxes, social satire, 
+              and conversational brilliance.
+            </note>
+          </bibl>
+          
+        </listBibl>
+        
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <projectDesc>
+        <p>
+          This TEI file is part of a corpus of three letters by Oscar Wilde encoded
+          for the course “Modelling Humanities Data with TEI-XML” at the École
+          nationale des chartes.
+        </p>
+      </projectDesc>
+      <editorialDecl>
+        <p>
+          Diplomatic transcription preserving original lineation, spelling, hyphenation,
+          punctuation, and abbreviations. Supplied expansions are encoded with 
+          &lt;choice&gt;, &lt;abbr&gt;, and &lt;expan&gt;.
+        </p>
+      </editorialDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
+      
+      <particDesc>
+        <listPerson>
+          
+          <person xml:id="pers_wilde">
+            <persName>
+              <forename>Oscar</forename>
+              <addName type="middleName">Fingal O’Flahertie Wills</addName>
+              <surname>Wilde</surname>
+            </persName>
+            <idno type="wikidata">Q30875</idno>
+            <state type="occupation">
+              <p>Author, playwright, journalist, and essayist associated with the Aesthetic and Decadent movements.</p>
+            </state>
+            <note>
+              In the early 1890s, Oscar Wilde was at the height of his literary career, 
+              publishing a series of successful society comedies with 
+              <persName ref="#pers_lane">John Lane</persName> at 
+              <orgName ref="#org_bodley_head">The Bodley Head</orgName>. 
+              This letter reflects Wilde’s close involvement in the material and commercial 
+              aspects of publication, including proof correction, pricing, and arrangements 
+              for American copyright.
+            </note>
+          </person>
+          
+          <person xml:id="pers_lane">
+            <persName>
+              <forename>John</forename>
+              <surname>Lane</surname>
+            </persName>
+            <state type="occupation">
+              <p>London publisher and co-founder of The Bodley Head.</p>
+            </state>
+            <note>
+              John Lane (1854–1925) was a British publisher who, together with 
+              <persName ref="#pers_mathews">Elkin Mathews</persName>, founded 
+              <orgName ref="#org_bodley_head">The Bodley Head</orgName>, an important London 
+              publishing house associated with fin-de-siècle literature and the Yellow Book circle. 
+              Lane published several of Wilde’s works, including his society plays, and played a 
+              central role in shaping the presentation and marketing of Wilde’s books.
+            </note>
+          </person>
+          
+          <person xml:id="pers_mathews">
+            <persName>
+              <forename>Elkin</forename>
+              <surname>Mathews</surname>
+            </persName>
+            <state type="occupation">
+              <p>London publisher and early partner in The Bodley Head.</p>
+            </state>
+            <note>
+              Elkin Mathews (1851–1921) was an independent London publisher and an early partner 
+              of <persName ref="#pers_lane">John Lane</persName> at 
+              <orgName ref="#org_bodley_head">The Bodley Head</orgName>. 
+              In this letter Wilde envisages Mathews as a potential publisher for 
+              <title type="work" rend="italic">The Portrait of Mr. W.H.</title>, 
+              suggesting different print runs and pricing for a revised edition.
+            </note>
+          </person>
+          
+          <person xml:id="pers_ricketts">
+            <persName>
+              <forename>Charles</forename>
+              <surname>Ricketts</surname>
+            </persName>
+            <state type="occupation">
+              <p>Artist, book designer, and close collaborator of Oscar Wilde.</p>
+            </state>
+            <note>
+              Charles Ricketts (1866–1931) was a British artist, illustrator, and book designer 
+              who collaborated closely with <persName ref="#pers_wilde">Oscar Wilde</persName> on 
+              the visual presentation of his works. Ricketts designed bindings and layouts for 
+              several of Wilde’s books, and in this letter Wilde refers to Ricketts’ views on the 
+              format, print run, and price of <title type="work" rend="italic">The Portrait of Mr. W.H.</title>.
+            </note>
+          </person>
+          
+          <person xml:id="pers_constance_wilde">
+            <persName>
+              <forename>Constance</forename>
+              <surname>Lloyd</surname>
+              <addName type="marriedName">Wilde</addName>
+            </persName>
+            
+            <idno type="wikidata">Q445095</idno>
+            
+            <state type="occupation">
+              <p>Writer, translator, and women’s rights advocate.</p>
+            </state>
+            
+            <state type="relationship">
+              <p>Wife of Oscar Wilde (married in 1884); mother of Cyril and Vyvyan Wilde.</p>
+            </state>
+            
+            <note>
+              Constance Mary Lloyd (1859–1898), later Constance Wilde, was an Irish writer and activist involved 
+              in dress reform and women's rights. She married <persName ref="#pers_wilde">Oscar Wilde</persName> in 1884 
+              and played a significant role in shaping his early literary and public life. 
+              In the summer of 1894, while living in <placeName ref="#place_worthing">Worthing</placeName>, she compiled 
+              a selection of Wilde’s epigrams and aphorisms, later privately printed as 
+              <title type="work" rend="italic">Oscariana</title>.  
+              After Wilde’s trial and imprisonment in 1895, Constance changed her surname 
+              and that of her children to “Holland.” She died in 1898 following spinal surgery.
+            </note>
+          </person>
+          
+          <person xml:id="pers_arthur_humphreys">
+            <persName>
+              <forename>Arthur</forename>
+              <addName type="middleName">Lee</addName>
+              <surname>Humphreys</surname>
+            </persName>
+            
+            <idno type="wikidata">Q59627596</idno>
+            
+            <state type="occupation">
+              <p>Publisher, bibliophile, and manager at Hatchards, London.</p>
+            </state>
+            
+            <state type="relationship">
+              <p>Published Constance Wilde’s private anthology <title type="work" rend="italic">Oscariana</title> in 1895.</p>
+            </state>
+            
+            <note>
+              Arthur Lee Humphreys (1865–1946) was a prominent London bookseller and publisher, 
+              long associated with <orgName>Hatchards</orgName> bookshop on Piccadilly.  
+              Known for his bibliophilic refinement, he oversaw limited and private editions for 
+              distinguished authors. In 1895 he privately printed 
+              <title type="work" rend="italic">Oscariana</title>, the anthology of epigrams compiled by 
+              <persName ref="#pers_constance_wilde">Constance Wilde</persName>, contributing to the preservation of 
+              <persName ref="#pers_wilde">Oscar Wilde</persName>’s reputation during a difficult period.
+            </note>
+          </person>
+                    
+        </listPerson>
+        
+        <listOrg>
+          <org xml:id="org_bodley_head">
+            <orgName>The Bodley Head</orgName>
+            <state type="function">
+              <p>London publishing house active in the late nineteenth and early twentieth centuries.</p>
+            </state>
+            <note>
+              The Bodley Head was a London publishing firm founded by 
+              <persName ref="#pers_lane">John Lane</persName> and 
+              <persName ref="#pers_mathews">Elkin Mathews</persName>. 
+              It became closely associated with avant-garde and fin-de-siècle writers, 
+              including <persName ref="#pers_wilde">Oscar Wilde</persName>, and was known 
+              for the distinctive design and high production values of its books.
+            </note>
+          </org>
+        </listOrg>
+      </particDesc>
+      
+      <settingDesc>
+        <listPlace>
+          
+          <place xml:id="place_worthing">
+            <placeName type="settlement">Worthing</placeName>
+            <idno type="geonames">2634677</idno>
+            <note>
+              Worthing is a seaside town in West Sussex, England. 
+              Wilde stayed there in the summer of 1894, during which he named one of his 
+              principal characters “Jack Worthing” in 
+              <title type="work" rend="italic">The Importance of Being Earnest</title>. 
+              This letter was written from Worthing, from the address “5 Esplanade”.
+            </note>
+          </place>
+          
+          <place xml:id="place_titestreet">
+            <placeName type="street">Tite Street, Chelsea</placeName>
+            <placeName type="address">16, Tite Street, Chelsea, S.W.</placeName>
+            <note>
+              16, Tite Street, Chelsea, in London, was Oscar Wilde’s primary London residence 
+              in the early 1890s. The printed letterhead of this address appears at the head of 
+              the letter, though the body of the letter was written from 
+              <placeName ref="#place_worthing">Worthing</placeName>.
+            </note>
+          </place>
+          
+          <place xml:id="place_liverpool">
+            <placeName>Liverpool</placeName>
+            <note>
+              Liverpool is a port city in northwest England. Wilde notes in this letter that 
+              <title type="work" rend="italic">The Woman of No Importance</title> 
+              had been lectured on there and used as a topic for sermons, and that the play 
+              should therefore have a good sale in the city.
+            </note>
+          </place>
+          
+          <place xml:id="place_newyork">
+            <placeName>New York</placeName>
+            <note>
+              New York is mentioned in connection with arrangements for American copyright. 
+              Wilde explains that he is sending proofs of 
+              <title type="work" rend="italic">The Woman of No Importance</title> to New York so that 
+              copyright can be secured in the United States before publication.
+            </note>
+          </place>
+          
+        </listPlace>
+      </settingDesc>
+      
+      <correspDesc>
+        <correspAction type="sent">
+          <persName ref="#pers_wilde">Oscar Wilde</persName>
+          <placeName ref="#place_worthing">Worthing</placeName>
+          <date when="1894-08">August 1894</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName ref="#pers_lane">John Lane</persName>
+          <note>Publisher at <orgName ref="#org_bodley_head">The Bodley Head</orgName>, London.</note>
+        </correspAction>
+      </correspDesc>
+    </profileDesc>
+    
+    <revisionDesc>
+      <change when="2025-11-16">
+        <name>Clara Martin</name>
+        <desc>Initial TEI encoding of the Wilde–Lane letter.</desc>
+      </change>
+    </revisionDesc>
+    
+  </teiHeader>
+  
+  <text xml:lang="en">
+    <body>
+      <div type="letter" xml:id="lane-letter">
+        
+        <!-- Printed and handwritten headers -->
+        <note type="letterhead" subtype="printed">
+          <p>
+            16, Tite Street,<lb/>
+            Chelsea. S.W.
+          </p>
+        </note>
+        
+        <note type="letterhead" subtype="address">
+          <p>
+            5 Esplanade<lb/>
+            <placeName ref="#place_worthing">Worthing</placeName>
+          </p>
+        </note>
+        
+        <opener>
+          <salute>Dear <persName ref="#pers_lane">Sir</persName></salute>
+        </opener>
+        
+        <!-- Paragraph 1 -->
+        <p rend="indentation">
+          I return<lb/>
+          corrected proofs <pc>—</pc><lb/>
+          the title page,<lb/>
+          dedication, <seg type="compound">play<pc>-</pc>bill</seg><lb/>
+          etc. have not yet<lb/>
+          come <pc>—</pc> please<lb/>
+          send them. I<lb/>
+          will not<lb/>
+          require any<lb/>
+          more proofs of<lb/>
+          the play, but I<lb/>
+          wish that the<lb/>
+          reader 
+          <choice>
+            <abbr>w[oul]d.</abbr>
+            <expan>would</expan>
+          </choice> go<lb/>
+          through the play<lb/>
+          once and correct<lb/>
+          any slips in the<lb/>
+          use of “will”<lb/>
+          and “shall” <pc>—</pc><lb/>
+          my use of the<lb/>
+          words is <term type="ethno-linguistic">Celtic</term><lb/>
+          not <term type="ethno-linguistic">Saxon</term>.
+        </p>
+        
+        <!-- Paragraph 2 -->
+        <p rend="indentation">
+          With regard<lb/>
+          to future arrangements<lb/>
+          I think the plays<lb/>
+          better remain with<lb/>
+          <persName ref="#pers_lane">Mr. Lane</persName> <pc>—</pc> at<lb/>
+          <orgName ref="#org_bodley_head">The Bodley Head</orgName> <pc>—</pc> as<lb/>
+          they form a series<lb/>
+          that should not<lb/>
+          be broken <pc>—</pc><lb/>
+          <persName ref="#pers_mathews">Mr. Mathews</persName> might<lb/>
+          have “<title type="work" rend="italic" ref="#work_mr_wh">
+            The Portrait<lb/> of Mr. W.H.
+          </title>” <pc>—</pc> and<lb/>
+          this 
+          <choice>
+            <abbr>w[oul]d.</abbr>
+            <expan>would</expan>
+          </choice> give an<lb/>
+          opportunity of<lb/>
+          making some alterations<lb/>
+          in the issue and<lb/>
+          price <pc>—</pc> 300 or 250 <pc>—</pc><lb/>
+          and 50 large paper<lb/>
+          <choice>
+            <abbr>w[oul]d</abbr>
+            <expan>would</expan>
+          </choice> be better. Also<lb/>
+          the book 
+          <choice>
+            <abbr>sh[oul]d.</abbr>
+            <expan>should</expan>
+          </choice> be a<lb/>
+          guinea. These, at<lb/>
+          least, are<lb/>
+          <persName ref="#pers_ricketts">Mr. Ricketts</persName>' views.<lb/>
+          This book should be<lb/>
+          out by end of<lb/>
+          October.
+        </p>
+        
+        <!-- Paragraph 3 -->
+        <p rend="indentation">
+          I have to get<lb/>
+          <title type="work" rend="italic" ref="#work_woman_no_importance">
+            The Woman of No<lb/>
+            Importance
+          </title> copyrighted<lb/>
+          simultaneously in<lb/>
+          <placeName>America</placeName> (please<lb/>
+          mark copyright<lb/>
+          as in <title type="work" rend="italic" ref="#work_lady_windermere">Lady Windermere</title>:<lb/>
+          this is most<lb/>
+          important) <pc>—</pc> and<lb/>
+          am sending proofs<lb/>
+          to <placeName ref="#place_newyork">New York</placeName>. I<lb/>
+          think the book can<lb/>
+          be out by <date when="1894-09-15">Sept. 15.</date><lb/>
+          when the play goes<lb/>
+          on tour. I shall<lb/>
+          tell my American<lb/>
+          agent to wire<lb/>
+          to me as soon as<lb/>
+          copyright is<lb/>
+          secured, so as to<lb/>
+          have no delay.
+        </p>
+        
+        <!-- Paragraph 4 -->
+        <p rend="indentation">
+          The play 
+          <choice>
+            <abbr>sh[oul]d</abbr>
+            <expan>should</expan>
+          </choice><lb/>
+          have a good sale<lb/>
+          at <placeName ref="#place_liverpool">Liverpool</placeName> <pc>—</pc><lb/>
+          where it has been<lb/>
+          lectured on, and<lb/>
+          formed a text<lb/>
+          for reckless<lb/>
+          sermons.
+        </p>
+        
+        <!-- Paragraph 5 -->
+        <p rend="indentation">
+          I have to thank<lb/>
+          you for allowing<lb/>
+          my <persName ref="#pers_constance_wilde">wife</persName> to make<lb/>
+          selections of phrases<lb/>
+          for her <title type="work" rend="italic" ref="#work_oscariana">anthology</title>.
+        </p>
+        
+        <closer>
+          <salute>I remain<lb/>truly</salute>
+          <signed>Oscar Wilde</signed>
+        </closer>
+        
+      </div>
+    </body>
+  </text>
+  
+</TEI>
